@@ -31,6 +31,7 @@ The [full A3/B1 export plot](figures/A3_B1_full_spectra.png) shows both samples'
 | Files | Content |
 | --- | --- |
 | `reflection/YbYag_{5,10,15}_{A,B}_R.txt` | Six measured face-reflectance scans |
+| `YbYAG_coated_reflection_combined.csv` | All six raw coated-sample A/B reflectance scans on their common 800–1200 nm wavelength grid; decimal commas converted to decimal points |
 | `YbYag_T.csv`, `YbYag_ABS.csv` | Published transmission and derived absorbance exports |
 | `YbYAG_A3_B1_last_spectra.csv` | A3 and B1 transmission and absorbance; the main absorption analysis uses A3 only |
 | `YbYAG_A3_spectra.csv` | A3-only copy of the wavelength, absorbance, and transmittance columns, with source values unchanged |
