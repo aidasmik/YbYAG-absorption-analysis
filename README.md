@@ -1,6 +1,6 @@
 # Yb:YAG absorption from reflection and transmission spectra
 
-This repository contains the measured spectra and the executed [analysis notebook](YbYAG_measurement_to_cross_section.ipynb). The notebook plots the raw measurements, applies the documented reflectance corrections, separates the coated samples' two-pass attenuation into one-pass absorbance, estimates absorption cross sections, and compares the results with literature points. It also plots the uncoated A3 transmission and the available photoluminescence (PL) spectra.
+This repository contains the measured spectra and the executed [analysis notebook](YbYAG_measurement_to_cross_section.ipynb). The notebook plots the raw measurements, applies the documented reflectance corrections, separates the coated samples' two-pass attenuation into one-pass absorbance, estimates absorption cross sections, and compares the results with literature points. It also plots the uncoated A3 transmission, the available photoluminescence (PL) spectra, and separately acquired spatial PL-ratio maps.
 
 ## Samples and assigned thicknesses
 
@@ -32,7 +32,8 @@ Run all cells in order. They write derived CSVs and PDF/PNG plots to `figures_ac
 | `YbYag_T.csv`, `YbYag_ABS.csv` | Published transmission and derived absorbance exports |
 | `YbYAG_A3_B1_last_spectra.csv` | A3 transmission and absorbance columns used here |
 | `pl_reference/*.csv` | Cleaned PL spectra and reported concentration ratios |
+| `pl_reference/spatial_maps/*.csv`, `pair_selection.json` | Selected coordinate-resolved 5%, 10%, and 15% PL-ratio maps and scan provenance |
 | `aluminum_reference_nist_example.csv` | Illustrative mirror reference used by the notebook |
 | `literature_reference_values.csv` | Reference values and citations |
 
-The spectra and PL tables were copied from [`aidasmik/YbYAG`](https://github.com/aidasmik/YbYAG/tree/d626e35938bf3ccce9c83d8cf133b6b7aa52a0a3) at commit `d626e35938bf3ccce9c83d8cf133b6b7aa52a0a3`. The original source repository provides the [reflection files](https://github.com/aidasmik/YbYAG/tree/d626e35938bf3ccce9c83d8cf133b6b7aa52a0a3/data/reflection), [A3/B1 spectral export](https://github.com/aidasmik/YbYAG/blob/d626e35938bf3ccce9c83d8cf133b6b7aa52a0a3/data/YbYAG_A3_B1_last_spectra.csv), [PL files](https://github.com/aidasmik/YbYAG/tree/d626e35938bf3ccce9c83d8cf133b6b7aa52a0a3/data/pl), and [literature table](https://github.com/aidasmik/YbYAG/blob/d626e35938bf3ccce9c83d8cf133b6b7aa52a0a3/data/analysis_2026_09_17/literature_reference_values.csv). This repository contains spectral PL scans, not spatial PL maps.
+The reflection spectra and spectral PL tables were copied from [`aidasmik/YbYAG`](https://github.com/aidasmik/YbYAG/tree/d626e35938bf3ccce9c83d8cf133b6b7aa52a0a3) at commit `d626e35938bf3ccce9c83d8cf133b6b7aa52a0a3`. The original source repository provides the [reflection files](https://github.com/aidasmik/YbYAG/tree/d626e35938bf3ccce9c83d8cf133b6b7aa52a0a3/data/reflection), [A3/B1 spectral export](https://github.com/aidasmik/YbYAG/blob/d626e35938bf3ccce9c83d8cf133b6b7aa52a0a3/data/YbYAG_A3_B1_last_spectra.csv), [PL files](https://github.com/aidasmik/YbYAG/tree/d626e35938bf3ccce9c83d8cf133b6b7aa52a0a3/data/pl), and [literature table](https://github.com/aidasmik/YbYAG/blob/d626e35938bf3ccce9c83d8cf133b6b7aa52a0a3/data/analysis_2026_09_17/literature_reference_values.csv). The spatial PL maps are separate lab measurements archived in `pl_reference/spatial_maps/`; they are not used to derive absorption cross sections.

@@ -1,0 +1,37 @@
+{
+  "definition": "R=(PL969/laser969)/(PL1030/laser1030); relative_R=R/median(R on selected interior)",
+  "status": "instrument-relative; Origin 15% sensitivity curve is archived but cross-sample calibration is not applied",
+  "interior_rule": "both PL/laser signals > 0.5 \u00d7 respective 95th percentile",
+  "pairs": {
+    "YbYag10": {
+      "file": "YbYag10_relative_969_1030_clean.csv",
+      "scan_969": "Yb_Yag10_2026-09-22_13-49-32",
+      "scan_1030": "Yb_Yag10_2026-09-22_15-18-40",
+      "matched_points": 2185,
+      "selected_points": 1611,
+      "median_instrument_ratio": 0.20702976277333612,
+      "source_file_969": "YbYag10\\Yb_Yag10_2026-09-22_13-49-32\\map_points.csv",
+      "source_file_1030": "YbYag10\\Yb_Yag10_2026-09-22_15-18-40\\map_points.csv"
+    },
+    "YbYag5": {
+      "file": "YbYag5_relative_969_1030_clean.csv",
+      "scan_969": "Yb_Yag5_2026-09-28_14-57-53",
+      "scan_1030": "Yb_Yag5_2026-09-28_13-03-16",
+      "matched_points": 6197,
+      "selected_points": 5533,
+      "median_instrument_ratio": 0.31247286193486795,
+      "source_file_969": "Yb_Yag5_2026-09-28_14-57-53\\map_points.csv",
+      "source_file_1030": "Yb_Yag5_2026-09-28_13-03-16\\map_points.csv"
+    },
+    "YbYag15": {
+      "file": "YbYag15_relative_969_1030_clean.csv",
+      "scan_969": "YbYag15.opju Book12 (2026-08-27 11:22)",
+      "scan_1030": "YbYag15.opju Book11 (2026-08-27 10:35)",
+      "matched_points": 2361,
+      "selected_points": 1580,
+      "median_instrument_ratio": 0.18650802762636098,
+      "source_file_969": "origin15_exports\\origin15_book12.csv",
+      "source_file_1030": "origin15_exports\\origin15_book11.csv"
+    }
+  }
+}
