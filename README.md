@@ -24,13 +24,15 @@ python -m jupyter lab YbYAG_measurement_to_cross_section.ipynb
 
 Run all cells in order. They write derived CSVs and PDF/PNG plots to `figures_academic/`. Those products are excluded from Git because the executed notebook already contains its plots and the cells regenerate them. The bundled aluminum-reference CSV is a **NIST example curve**, not a measurement of the mirror used in the lab. The shared smooth reflectance compensation is a relative visualization; the absolute cross sections remain conditional on the simplified optical model and nominal concentrations.
 
+The [full A3/B1 export plot](figures/A3_B1_full_spectra.png) shows both samples' raw transmittance and absorbance from 800 to 1200 nm, without optical corrections or smoothing. Regenerate the PNG and PDF with `python plot_A3_B1_full_spectra.py`.
+
 ## Input data
 
 | Files | Content |
 | --- | --- |
 | `reflection/YbYag_{5,10,15}_{A,B}_R.txt` | Six measured face-reflectance scans |
 | `YbYag_T.csv`, `YbYag_ABS.csv` | Published transmission and derived absorbance exports |
-| `YbYAG_A3_B1_last_spectra.csv` | A3 transmission and absorbance columns used here |
+| `YbYAG_A3_B1_last_spectra.csv` | A3 and B1 transmission and absorbance; the main absorption analysis uses A3 only |
 | `pl_reference/*.csv` | Cleaned PL spectra and reported concentration ratios |
 | `pl_reference/spatial_maps/*.csv`, `pair_selection.json` | Selected coordinate-resolved 5%, 10%, and 15% PL-ratio maps and scan provenance |
 | `aluminum_reference_nist_example.csv` | Illustrative mirror reference used by the notebook |
