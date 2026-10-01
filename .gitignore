@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+figures_academic/
+common_hr_compensation_curve_950_1100.csv
+smooth_hr_compensation_950_1100.csv
+common_reflection_compensation_800_1200.csv
+wide_reflection_corrected_800_1200.csv
+uncoated_A3_measurement.csv
+A3_conditional_concentration.csv
